@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+ 
+<style></style>
+</head>
+<body>
+<script type="text/javascript">
+	// 完成下面程序，将`name`变量中的字母全部转为为大写，输出：`'HELLO'`。
+	var name = 'hello';
+	var trans_name = name.toUpperCase() ;
+	console.log(trans_name);
+	// 完成下面程序，将sentence变量中的所有单词首字母变为大写，输出：'Good Afternoon, Mr Mike.'。
+	var sentence = 'good afternoon, mr mike.';
+	function firstUpperCase(str) {
+	  return str.replace(/\b(\w)(\w*)/g, function($0, $1, $2) {
+		return $1.toUpperCase() + $2.toLowerCase()
+	  })
+	}
+	console.log(firstUpperCase(sentence));
+	// 完成下面程序，将money变量中的金额提取出来，输出：20。
+	var money = '￥20';
+	var num= money.replace(/[^0-9]/ig,"");
+	console.log(num);
+ 
+</script>	
+</body>
+</html>
+ 
